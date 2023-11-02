@@ -7,5 +7,7 @@ require('config.packer')
 require('config.ui')
 -- Nvim Tree
 require("nvim-tree").setup()
-
+-- LSP
+require('config.lspconfig')
+require('config.treesitter')
 

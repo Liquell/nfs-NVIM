@@ -28,4 +28,20 @@ return require('packer').startup(function(use)
 
 	-- Theme
 	use { "ellisonleao/gruvbox.nvim" }
+
+	-- LSP
+	use 'neovim/nvim-lspconfig'  -- Configurations for Nvim LSP
+	use 'williamboman/mason.nvim'  -- Portable package manager for Neovim
+
+	-- Syntax highlighting
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = ':TSUpdate'
+	}
+
+	-- Auto-completion plugin
+	use 'hrsh7th/nvim-cmp'  -- Autocompletion plugin
+	use 'hrsh7th/cmp-nvim-lsp'  -- LSP source for nvim-cmp
+	use 'saadparwaiz1/cmp_luasnip'  -- Snippets source for nvim-cmp
+	use 'L3MON4D3/LuaSnip'  -- Snippets plugin
 end)
