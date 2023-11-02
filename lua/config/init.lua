@@ -1,1 +1,4 @@
-print("Road to hell")
+print('Road to hell')
+
+require('config.remap')
+
