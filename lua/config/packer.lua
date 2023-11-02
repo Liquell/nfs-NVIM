@@ -28,7 +28,7 @@ return require('packer').startup(function(use)
 
 	-- Theme
 	use { "ellisonleao/gruvbox.nvim" }
-
+	use "savq/melange-nvim"
 	-- LSP
 	use 'neovim/nvim-lspconfig'  -- Configurations for Nvim LSP
 	use 'williamboman/mason.nvim'  -- Portable package manager for Neovim
@@ -49,4 +49,7 @@ return require('packer').startup(function(use)
 
 	-- Other
 	use 'terrortylor/nvim-comment'
+	use "lukas-reineke/indent-blankline.nvim"
+	-- use "lewis6991/gitsigns.nvim"
+	use "RRethy/vim-illuminate"
 end)

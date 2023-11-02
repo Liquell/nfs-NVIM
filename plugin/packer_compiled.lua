@@ -99,10 +99,20 @@ _G.packer_plugins = {
     path = "/home/liquell/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["mason.nvim"] = {
     loaded = true,
     path = "/home/liquell/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["melange-nvim"] = {
+    loaded = true,
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/melange-nvim",
+    url = "https://github.com/savq/melange-nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -153,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-closer",
     url = "https://github.com/rstacruz/vim-closer"
+  },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
   }
 }
 

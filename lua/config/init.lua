@@ -15,3 +15,4 @@ require('config.cmpconfig')
 require('bufferline').setup{}
 -- Nvim comment
 require'nvim_comment'.setup()
+-- Other
