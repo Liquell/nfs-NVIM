@@ -18,3 +18,4 @@ require'nvim_comment'.setup()
 -- Other
 require("which-key").setup{}
 require('config.wk')
+require('config.lualine')

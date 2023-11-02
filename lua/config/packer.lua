@@ -51,4 +51,8 @@ return require('packer').startup(function(use)
   use "RRethy/vim-illuminate"
   -- Add this inside your packer startup function
   use 'folke/which-key.nvim'
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 end)
