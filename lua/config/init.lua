@@ -10,4 +10,4 @@ require("nvim-tree").setup()
 -- LSP
 require('config.lspconfig')
 require('config.treesitter')
-
+require('config.cmpconfig')
