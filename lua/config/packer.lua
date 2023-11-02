@@ -17,4 +17,12 @@ return require('packer').startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
+
+	-- Nvim Tree
+	use {
+		'nvim-tree/nvim-tree.lua',
+		requires = {
+			'nvim-tree/nvim-web-devicons', -- optional
+		},
+	}
 end)
