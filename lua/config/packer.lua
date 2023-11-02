@@ -47,4 +47,6 @@ return require('packer').startup(function(use)
 	-- Buffers 
 	use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
+	-- Other
+	use 'terrortylor/nvim-comment'
 end)

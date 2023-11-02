@@ -29,12 +29,18 @@ map('n', '<C-w>', ':bd!<CR>', opts)          -- Close the current buffer
 map('n', '<leader>w', ':bd!<CR>', opts)          -- Close the current buffer
 
 
-map('n', '<Leader>1', ':tabn 1<CR>', opts)
-map('n', '<Leader>2', ':tabn 2<CR>', opts)
-map('n', '<Leader>3', ':tabn 3<CR>', opts)
-map('n', '<Leader>4', ':tabn 4<CR>', opts)
-map('n', '<Leader>5', ':tabn 5<CR>', opts)
-map('n', '<Leader>6', ':tabn 6<CR>', opts)
-map('n', '<Leader>7', ':tabn 7<CR>', opts)
-map('n', '<Leader>8', ':tabn 8<CR>', opts)
-map('n', '<Leader>9', ':tabn 9<CR>', opts)
+map("n", "<leader>1", "<Cmd>BufferLineGoToBuffer 1<CR>", opts)
+map("n", "<leader>2", "<Cmd>BufferLineGoToBuffer 2<CR>", opts)
+map("n", "<leader>3", "<Cmd>BufferLineGoToBuffer 3<CR>", opts)
+map("n", "<leader>4", "<Cmd>BufferLineGoToBuffer 4<CR>", opts)
+map("n", "<leader>5", "<Cmd>BufferLineGoToBuffer 5<CR>", opts)
+map("n", "<leader>6", "<Cmd>BufferLineGoToBuffer 6<CR>", opts)
+map("n", "<leader>7", "<Cmd>BufferLineGoToBuffer 7<CR>", opts)
+map("n", "<leader>8", "<Cmd>BufferLineGoToBuffer 8<CR>", opts)
+map("n", "<leader>9", "<Cmd>BufferLineGoToBuffer 9<CR>", opts)
+
+
+
+-- Comment 
+map('n', '<leader>/', ':CommentToggle<CR>', opts)
+map('v', '<leader>/', ':CommentToggle<CR>', opts)

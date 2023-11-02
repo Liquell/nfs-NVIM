@@ -13,3 +13,5 @@ require('config.treesitter')
 require('config.cmpconfig')
 -- BufferLines
 require('bufferline').setup{}
+-- Nvim comment
+require'nvim_comment'.setup()
