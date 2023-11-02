@@ -49,4 +49,6 @@ return require('packer').startup(function(use)
   use "lukas-reineke/indent-blankline.nvim"
   -- use "lewis6991/gitsigns.nvim"
   use "RRethy/vim-illuminate"
+  -- Add this inside your packer startup function
+  use 'folke/which-key.nvim'
 end)
