@@ -174,6 +174,11 @@ _G.packer_plugins = {
     path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
   },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/home/liquell/.local/share/nvim/site/pack/packer/start/which-key.nvim",
