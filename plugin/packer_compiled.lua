@@ -114,6 +114,12 @@ _G.packer_plugins = {
     path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
   },
+  ["gitsigns.nvim"] = {
+    config = { "\27LJ\2\n‡\6\0\0\5\0\24\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\14\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\3=\3\15\0025\3\16\0=\3\17\0025\3\18\0=\3\19\0025\3\20\0=\3\21\0025\3\22\0=\3\23\2B\0\2\1K\0\1\0\tyadm\1\0\1\venable\1\19preview_config\1\0\5\bcol\3\1\nstyle\fminimal\rrelative\vcursor\vborder\vsingle\brow\3\0\28current_line_blame_opts\1\0\4\ndelay\3è\a\14virt_text\2\18virt_text_pos\beol\22ignore_whitespace\1\17watch_gitdir\1\0\2\17follow_files\2\rinterval\3è\a\nsigns\1\0\t\20update_debounce\3d\nnumhl\1\vlinehl\1\18sign_priority\3\6\20max_file_length\3À¸\2\15signcolumn\2\14word_diff\1\23current_line_blame\1\24attach_to_untracked\2\17changedelete\1\0\3\ttext\6~\ahl\15DiffChange\nnumhl\21GitSignsChangeNr\14topdelete\1\0\3\ttext\bâ€¾\ahl\15DiffDelete\nnumhl\21GitSignsDeleteNr\vdelete\1\0\3\ttext\6_\ahl\15DiffDelete\nnumhl\21GitSignsDeleteNr\vchange\1\0\3\ttext\bâ”‚\ahl\15DiffChange\nnumhl\21GitSignsChangeNr\badd\1\0\0\1\0\3\ttext\bâ”‚\ahl\fDiffAdd\nnumhl\18GitSignsAddNr\nsetup\rgitsigns\frequire\0" },
+    loaded = true,
+    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
@@ -238,6 +244,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\n‡\6\0\0\5\0\24\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\14\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\3=\3\15\0025\3\16\0=\3\17\0025\3\18\0=\3\19\0025\3\20\0=\3\21\0025\3\22\0=\3\23\2B\0\2\1K\0\1\0\tyadm\1\0\1\venable\1\19preview_config\1\0\5\bcol\3\1\nstyle\fminimal\rrelative\vcursor\vborder\vsingle\brow\3\0\28current_line_blame_opts\1\0\4\ndelay\3è\a\14virt_text\2\18virt_text_pos\beol\22ignore_whitespace\1\17watch_gitdir\1\0\2\17follow_files\2\rinterval\3è\a\nsigns\1\0\t\20update_debounce\3d\nnumhl\1\vlinehl\1\18sign_priority\3\6\20max_file_length\3À¸\2\15signcolumn\2\14word_diff\1\23current_line_blame\1\24attach_to_untracked\2\17changedelete\1\0\3\ttext\6~\ahl\15DiffChange\nnumhl\21GitSignsChangeNr\14topdelete\1\0\3\ttext\bâ€¾\ahl\15DiffDelete\nnumhl\21GitSignsDeleteNr\vdelete\1\0\3\ttext\6_\ahl\15DiffDelete\nnumhl\21GitSignsDeleteNr\vchange\1\0\3\ttext\bâ”‚\ahl\15DiffChange\nnumhl\21GitSignsChangeNr\badd\1\0\0\1\0\3\ttext\bâ”‚\ahl\fDiffAdd\nnumhl\18GitSignsAddNr\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
 -- Config for: nvim-cmp
 time([[Config for nvim-cmp]], true)
 try_loadstring("\27LJ\2\n›\1\0\0\b\0\t\0\0186\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0004\4\0\0=\4\4\0039\4\5\0009\4\6\0044\6\3\0005\a\a\0>\a\1\0065\a\b\0>\a\2\6B\4\2\2=\4\6\3B\1\2\1K\0\1\0\1\0\1\tname\vbuffer\1\0\1\tname\rnvim_lsp\fsources\vconfig\fmapping\1\0\0\nsetup\bcmp\frequire\0", "config", "nvim-cmp")

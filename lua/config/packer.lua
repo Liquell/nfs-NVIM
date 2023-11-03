@@ -83,4 +83,51 @@ return require('packer').startup(function(use)
   use 'jeetsukumaran/vim-buffergator'
   use 'jwalton512/vim-blade'
   use 'mattn/emmet-vim'
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    },
+    config = function()
+      require('gitsigns').setup({
+        signs = {
+          add = { hl = 'DiffAdd', text = '│', numhl = 'GitSignsAddNr' },
+          change = { hl = 'DiffChange', text = '│', numhl = 'GitSignsChangeNr' },
+          delete = { hl = 'DiffDelete', text = '_', numhl = 'GitSignsDeleteNr' },
+          topdelete = { hl = 'DiffDelete', text = '‾', numhl = 'GitSignsDeleteNr' },
+          changedelete = { hl = 'DiffChange', text = '~', numhl = 'GitSignsChangeNr' },
+        },
+        signcolumn = true,  
+        numhl = false,      
+        linehl = false,     
+        word_diff = false,  
+        watch_gitdir = {
+          interval = 1000,
+          follow_files = true
+        },
+        attach_to_untracked = true,
+        current_line_blame = false, 
+        current_line_blame_opts = {
+          virt_text = true,
+          virt_text_pos = 'eol', 
+          delay = 1000,
+          ignore_whitespace = false,
+        },
+        sign_priority = 6,
+        update_debounce = 100,
+        status_formatter = nil, 
+        max_file_length = 40000,
+        preview_config = {
+          border = 'single',
+          style = 'minimal',
+          relative = 'cursor',
+          row = 0,
+          col = 1
+        },
+        yadm = {
+          enable = false,
+        },
+      })
+    end
+  }
 end)

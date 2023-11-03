@@ -16,8 +16,9 @@ vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldlevelstart = 99
 
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
--- vim.cmd([[colorscheme melange]])
+vim.opt.termguicolors = true
+vim.cmd.colorscheme 'melange'
+-- vim.cmd([[colorscheme gruvbox]])
 
 -- Lines
 local highlight = {
