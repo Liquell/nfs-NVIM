@@ -56,4 +56,5 @@ return require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   use 'mg979/vim-visual-multi'
+  use 'github/copilot.vim'
 end)

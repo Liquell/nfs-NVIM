@@ -2,11 +2,12 @@ vim.g.mapleader = " "
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 local vimKey = vim.keymap.set
+local vimCmd = vim.cmd
 
-vimKey("n", "<leader>e", vim.cmd.NvimTreeToggle)
-vimKey("n", "<leader>o", vim.cmd.NvimTreeFocus)
-vimKey("n", "<leader>s", vim.cmd.w)
-vimKey("n", "<C-s>", vim.cmd.w)
+vimKey("n", "<leader>e", vimCmd.NvimTreeToggle)
+vimKey("n", "<leader>o", vimCmd.NvimTreeFocus)
+vimKey("n", "<leader>s", vimCmd.w)
+vimKey("n", "<C-s>", vimCmd.w)
 vimKey("i", "jj", "<Esc>")
 
 map('n', '<C-h>', '<C-w>h', { noremap = true, silent = true })
@@ -46,3 +47,8 @@ map("n", "<leader>p", "<Cmd>BufferLineCyclePrev<CR>", opts)
 -- Comment 
 map('n', '<leader>/', ':CommentToggle<CR>', opts)
 map('v', '<leader>/', ':CommentToggle<CR>', opts)
+
+-- Copilot 
+vim.g.copilot_no_tab_map = true
+vim.g.copilot_assume_mapped = true
+vim.api.nvim_set_keymap("i", "<C-Y>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
