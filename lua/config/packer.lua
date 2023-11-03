@@ -57,4 +57,5 @@ return require('packer').startup(function(use)
   }
   use 'mg979/vim-visual-multi'
   use 'github/copilot.vim'
+  use 'mbbill/undotree'
 end)
