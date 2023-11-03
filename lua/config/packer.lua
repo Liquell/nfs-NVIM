@@ -29,6 +29,7 @@ return require('packer').startup(function(use)
   -- LSP
   use 'neovim/nvim-lspconfig'  -- Configurations for Nvim LSP
   use 'williamboman/mason.nvim'  -- Portable package manager for Neovim
+  use 'williamboman/mason-lspconfig.nvim'
 
   -- Syntax highlighting
   use {
