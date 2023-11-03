@@ -34,10 +34,9 @@ map('n', '<leader>w', ':bd!<CR>', opts)          -- Close the current buffer
 for i = 1, 9 do
     map("n", "<leader>" .. tostring(i), "<Cmd>BufferLineGoToBuffer " .. tostring(i) .. "<CR>", opts)
 end
+
 map("n", "<leader>n", "<Cmd>BufferLineCycleNext<CR>", opts)
 map("n", "<leader>p", "<Cmd>BufferLineCyclePrev<CR>", opts)
-
-
 
 -- Comment 
 map('n', '<leader>/', ':CommentToggle<CR>', opts)
