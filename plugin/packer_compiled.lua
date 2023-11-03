@@ -179,6 +179,11 @@ _G.packer_plugins = {
     path = "/home/liquell/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-buffergator"] = {
+    loaded = true,
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-buffergator",
+    url = "https://github.com/jeetsukumaran/vim-buffergator"
+  },
   ["vim-closer"] = {
     loaded = true,
     path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-closer",

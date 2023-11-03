@@ -55,8 +55,9 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
-  use 'mg979/vim-visual-multi'
   use 'github/copilot.vim'
+  use 'mg979/vim-visual-multi'
   use 'mbbill/undotree'
   use 'theprimeagen/harpoon'
+  use 'jeetsukumaran/vim-buffergator'
 end)
