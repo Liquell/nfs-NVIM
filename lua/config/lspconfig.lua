@@ -12,3 +12,7 @@ for _, lsp in ipairs(servers) do
     }
   }
 end
+
+-- For PHP
+local lspconfig = require('lspconfig')
+lspconfig.intelephense.setup {}

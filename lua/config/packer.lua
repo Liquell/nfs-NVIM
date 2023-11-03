@@ -37,10 +37,29 @@ return require('packer').startup(function(use)
   }
 
   -- Auto-completion plugin
-  use 'hrsh7th/nvim-cmp'  -- Autocompletion plugin
-  use 'hrsh7th/cmp-nvim-lsp'  -- LSP source for nvim-cmp
-  use 'saadparwaiz1/cmp_luasnip'  -- Snippets source for nvim-cmp
-  use 'L3MON4D3/LuaSnip'  -- Snippets plugin
+  use 'L3MON4D3/LuaSnip'
+  use {
+  'hrsh7th/nvim-cmp',
+  requires = {
+    'hrsh7th/cmp-buffer', -- buffer completions
+    'hrsh7th/cmp-path',   -- path completions
+    'hrsh7th/cmp-cmdline',-- cmdline completions
+    'hrsh7th/cmp-nvim-lsp'-- LSP completions
+  },
+  config = function()
+    local cmp = require('cmp')
+    cmp.setup({
+      -- Setup completion
+      mapping = {
+        -- Define your own key mappings
+      },
+      sources = cmp.config.sources({
+        { name = 'nvim_lsp' },
+        { name = 'buffer' },
+      })
+    })
+  end
+}
   -- Buffers 
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
@@ -60,4 +79,6 @@ return require('packer').startup(function(use)
   use 'mbbill/undotree'
   use 'theprimeagen/harpoon'
   use 'jeetsukumaran/vim-buffergator'
+  use 'jwalton512/vim-blade'
+  use 'mattn/emmet-vim'
 end)
