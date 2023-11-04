@@ -74,3 +74,6 @@ map('n', '<leader>lt', '<cmd>lua vim.lsp.buf.type_definition()<CR>', { noremap=t
 map('n', '<leader>lj', '<cmd>lua vim.diagnostic.goto_next()<CR>', { noremap=true, silent=true })
 map('n', '<leader>lk', '<cmd>lua vim.diagnostic.goto_prev()<CR>', { noremap=true, silent=true })
 
+-- LazyGit 
+map("n", "<leader>lg", ":LazyGit<CR>", opts)
+

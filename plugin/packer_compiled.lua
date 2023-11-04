@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/Liquell/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/Liquell/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/Liquell/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/Liquell/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/Liquell/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/liquell/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/liquell/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/liquell/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/liquell/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/liquell/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,169 +76,174 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["bufferline.nvim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-cmdline"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["cmp-path"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/cmp-path",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
   ["copilot.vim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
   ["emmet-vim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
   },
   ["gitsigns.nvim"] = {
-    config = { "\27LJ\2\n‡\6\0\0\5\0\24\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\14\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\3=\3\15\0025\3\16\0=\3\17\0025\3\18\0=\3\19\0025\3\20\0=\3\21\0025\3\22\0=\3\23\2B\0\2\1K\0\1\0\tyadm\1\0\1\venable\1\19preview_config\1\0\5\bcol\3\1\nstyle\fminimal\rrelative\vcursor\vborder\vsingle\brow\3\0\28current_line_blame_opts\1\0\4\ndelay\3è\a\14virt_text\2\18virt_text_pos\beol\22ignore_whitespace\1\17watch_gitdir\1\0\2\17follow_files\2\rinterval\3è\a\nsigns\1\0\t\20update_debounce\3d\nnumhl\1\vlinehl\1\18sign_priority\3\6\20max_file_length\3À¸\2\15signcolumn\2\14word_diff\1\23current_line_blame\1\24attach_to_untracked\2\17changedelete\1\0\3\ttext\6~\ahl\15DiffChange\nnumhl\21GitSignsChangeNr\14topdelete\1\0\3\ttext\bâ€¾\ahl\15DiffDelete\nnumhl\21GitSignsDeleteNr\vdelete\1\0\3\ttext\6_\ahl\15DiffDelete\nnumhl\21GitSignsDeleteNr\vchange\1\0\3\ttext\bâ”‚\ahl\15DiffChange\nnumhl\21GitSignsChangeNr\badd\1\0\0\1\0\3\ttext\bâ”‚\ahl\fDiffAdd\nnumhl\18GitSignsAddNr\nsetup\rgitsigns\frequire\0" },
+    config = { "\27LJ\2\n‡\6\0\0\5\0\24\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\14\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\3=\3\15\0025\3\16\0=\3\17\0025\3\18\0=\3\19\0025\3\20\0=\3\21\0025\3\22\0=\3\23\2B\0\2\1K\0\1\0\tyadm\1\0\1\venable\1\19preview_config\1\0\5\nstyle\fminimal\bcol\3\1\rrelative\vcursor\vborder\vsingle\brow\3\0\28current_line_blame_opts\1\0\4\14virt_text\2\ndelay\3è\a\22ignore_whitespace\1\18virt_text_pos\beol\17watch_gitdir\1\0\2\17follow_files\2\rinterval\3è\a\nsigns\1\0\t\24attach_to_untracked\2\20max_file_length\3À¸\2\23current_line_blame\1\nnumhl\1\14word_diff\1\vlinehl\1\15signcolumn\2\20update_debounce\3d\18sign_priority\3\6\17changedelete\1\0\3\ttext\6~\nnumhl\21GitSignsChangeNr\ahl\15DiffChange\14topdelete\1\0\3\ttext\bâ€¾\nnumhl\21GitSignsDeleteNr\ahl\15DiffDelete\vdelete\1\0\3\ttext\6_\nnumhl\21GitSignsDeleteNr\ahl\15DiffDelete\vchange\1\0\3\ttext\bâ”‚\nnumhl\21GitSignsChangeNr\ahl\15DiffChange\badd\1\0\0\1\0\3\ttext\bâ”‚\nnumhl\18GitSignsAddNr\ahl\fDiffAdd\nsetup\rgitsigns\frequire\0" },
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["gruvbox.nvim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   harpoon = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/harpoon",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["lazygit.nvim"] = {
+    loaded = true,
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
+    url = "https://github.com/kdheepak/lazygit.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
     url = "https://github.com/onsails/lspkind-nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["melange-nvim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/melange-nvim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/melange-nvim",
     url = "https://github.com/savq/melange-nvim"
   },
   ["nvim-cmp"] = {
     config = { "\27LJ\2\n›\1\0\0\b\0\t\0\0186\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0004\4\0\0=\4\4\0039\4\5\0009\4\6\0044\6\3\0005\a\a\0>\a\1\0065\a\b\0>\a\2\6B\4\2\2=\4\6\3B\1\2\1K\0\1\0\1\0\1\tname\vbuffer\1\0\1\tname\rnvim_lsp\fsources\vconfig\fmapping\1\0\0\nsetup\bcmp\frequire\0" },
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-comment"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   undotree = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/undotree",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-blade"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/vim-blade",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-blade",
     url = "https://github.com/jwalton512/vim-blade"
   },
   ["vim-buffergator"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/vim-buffergator",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-buffergator",
     url = "https://github.com/jeetsukumaran/vim-buffergator"
   },
   ["vim-closer"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/vim-closer",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-closer",
     url = "https://github.com/rstacruz/vim-closer"
   },
   ["vim-illuminate"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
   },
   ["vim-visual-multi"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
     url = "https://github.com/mg979/vim-visual-multi"
   },
   ["which-key.nvim"] = {
     loaded = true,
-    path = "/home/Liquell/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/which-key.nvim",
     url = "https://github.com/folke/which-key.nvim"
   }
 }
@@ -246,7 +251,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\n‡\6\0\0\5\0\24\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\14\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\3=\3\15\0025\3\16\0=\3\17\0025\3\18\0=\3\19\0025\3\20\0=\3\21\0025\3\22\0=\3\23\2B\0\2\1K\0\1\0\tyadm\1\0\1\venable\1\19preview_config\1\0\5\bcol\3\1\nstyle\fminimal\rrelative\vcursor\vborder\vsingle\brow\3\0\28current_line_blame_opts\1\0\4\ndelay\3è\a\14virt_text\2\18virt_text_pos\beol\22ignore_whitespace\1\17watch_gitdir\1\0\2\17follow_files\2\rinterval\3è\a\nsigns\1\0\t\20update_debounce\3d\nnumhl\1\vlinehl\1\18sign_priority\3\6\20max_file_length\3À¸\2\15signcolumn\2\14word_diff\1\23current_line_blame\1\24attach_to_untracked\2\17changedelete\1\0\3\ttext\6~\ahl\15DiffChange\nnumhl\21GitSignsChangeNr\14topdelete\1\0\3\ttext\bâ€¾\ahl\15DiffDelete\nnumhl\21GitSignsDeleteNr\vdelete\1\0\3\ttext\6_\ahl\15DiffDelete\nnumhl\21GitSignsDeleteNr\vchange\1\0\3\ttext\bâ”‚\ahl\15DiffChange\nnumhl\21GitSignsChangeNr\badd\1\0\0\1\0\3\ttext\bâ”‚\ahl\fDiffAdd\nnumhl\18GitSignsAddNr\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+try_loadstring("\27LJ\2\n‡\6\0\0\5\0\24\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\14\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\3=\3\15\0025\3\16\0=\3\17\0025\3\18\0=\3\19\0025\3\20\0=\3\21\0025\3\22\0=\3\23\2B\0\2\1K\0\1\0\tyadm\1\0\1\venable\1\19preview_config\1\0\5\nstyle\fminimal\bcol\3\1\rrelative\vcursor\vborder\vsingle\brow\3\0\28current_line_blame_opts\1\0\4\14virt_text\2\ndelay\3è\a\22ignore_whitespace\1\18virt_text_pos\beol\17watch_gitdir\1\0\2\17follow_files\2\rinterval\3è\a\nsigns\1\0\t\24attach_to_untracked\2\20max_file_length\3À¸\2\23current_line_blame\1\nnumhl\1\14word_diff\1\vlinehl\1\15signcolumn\2\20update_debounce\3d\18sign_priority\3\6\17changedelete\1\0\3\ttext\6~\nnumhl\21GitSignsChangeNr\ahl\15DiffChange\14topdelete\1\0\3\ttext\bâ€¾\nnumhl\21GitSignsDeleteNr\ahl\15DiffDelete\vdelete\1\0\3\ttext\6_\nnumhl\21GitSignsDeleteNr\ahl\15DiffDelete\vchange\1\0\3\ttext\bâ”‚\nnumhl\21GitSignsChangeNr\ahl\15DiffChange\badd\1\0\0\1\0\3\ttext\bâ”‚\nnumhl\18GitSignsAddNr\ahl\fDiffAdd\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
 -- Config for: nvim-cmp
 time([[Config for nvim-cmp]], true)
