@@ -132,7 +132,7 @@ return require('packer').startup(function(use)
     require("toggleterm").setup()
   end}
 
-  use 'echasnovski/mini.nvim'
+  -- use 'echasnovski/mini.nvim'
 
   use {
     'windwp/nvim-ts-autotag',
