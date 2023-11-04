@@ -140,6 +140,7 @@ return require('packer').startup(function(use)
       require('nvim-ts-autotag').setup()
     end
   }
+  use 'tpope/vim-surround'
 
     if packer_bootstrap then
       require('packer').sync()
