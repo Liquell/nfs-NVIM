@@ -1,17 +1,14 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- Simple plugins can be specified as strings
   use 'rstacruz/vim-closer'
 
 
   -- Telescope
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.4',
-    -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
@@ -135,7 +132,9 @@ return require('packer').startup(function(use)
     require("toggleterm").setup()
   end}
 
-  if packer_bootstrap then
-    require('packer').sync()
-  end
-end)
+  use 'echasnovski/mini.nvim'
+
+    if packer_bootstrap then
+      require('packer').sync()
+    end
+  end)

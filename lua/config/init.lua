@@ -24,3 +24,4 @@ require'nvim_comment'.setup()
 require("which-key").setup{}
 require('config.wk')
 require('config.lualine')
+require('config.miniMove')

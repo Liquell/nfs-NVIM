@@ -79,3 +79,4 @@ map("n", "<leader>lg", ":LazyGit<CR>", opts)
 
 -- TogleTerm
 map("n", "<leader>tt", ":ToggleTerm<CR>", opts)
+
