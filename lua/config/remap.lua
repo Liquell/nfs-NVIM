@@ -77,3 +77,5 @@ map('n', '<leader>lk', '<cmd>lua vim.diagnostic.goto_prev()<CR>', { noremap=true
 -- LazyGit 
 map("n", "<leader>lg", ":LazyGit<CR>", opts)
 
+-- TogleTerm
+map("n", "<leader>tt", ":ToggleTerm<CR>", opts)

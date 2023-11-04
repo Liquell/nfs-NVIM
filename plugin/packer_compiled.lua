@@ -115,7 +115,7 @@ _G.packer_plugins = {
     url = "https://github.com/mattn/emmet-vim"
   },
   ["gitsigns.nvim"] = {
-    config = { "\27LJ\2\n‡\6\0\0\5\0\24\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\14\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\3=\3\15\0025\3\16\0=\3\17\0025\3\18\0=\3\19\0025\3\20\0=\3\21\0025\3\22\0=\3\23\2B\0\2\1K\0\1\0\tyadm\1\0\1\venable\1\19preview_config\1\0\5\nstyle\fminimal\bcol\3\1\rrelative\vcursor\vborder\vsingle\brow\3\0\28current_line_blame_opts\1\0\4\14virt_text\2\ndelay\3è\a\22ignore_whitespace\1\18virt_text_pos\beol\17watch_gitdir\1\0\2\17follow_files\2\rinterval\3è\a\nsigns\1\0\t\24attach_to_untracked\2\20max_file_length\3À¸\2\23current_line_blame\1\nnumhl\1\14word_diff\1\vlinehl\1\15signcolumn\2\20update_debounce\3d\18sign_priority\3\6\17changedelete\1\0\3\ttext\6~\nnumhl\21GitSignsChangeNr\ahl\15DiffChange\14topdelete\1\0\3\ttext\bâ€¾\nnumhl\21GitSignsDeleteNr\ahl\15DiffDelete\vdelete\1\0\3\ttext\6_\nnumhl\21GitSignsDeleteNr\ahl\15DiffDelete\vchange\1\0\3\ttext\bâ”‚\nnumhl\21GitSignsChangeNr\ahl\15DiffChange\badd\1\0\0\1\0\3\ttext\bâ”‚\nnumhl\18GitSignsAddNr\ahl\fDiffAdd\nsetup\rgitsigns\frequire\0" },
+    config = { "\27LJ\2\n‡\6\0\0\5\0\24\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\14\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\3=\3\15\0025\3\16\0=\3\17\0025\3\18\0=\3\19\0025\3\20\0=\3\21\0025\3\22\0=\3\23\2B\0\2\1K\0\1\0\tyadm\1\0\1\venable\1\19preview_config\1\0\5\rrelative\vcursor\bcol\3\1\brow\3\0\vborder\vsingle\nstyle\fminimal\28current_line_blame_opts\1\0\4\18virt_text_pos\beol\14virt_text\2\ndelay\3è\a\22ignore_whitespace\1\17watch_gitdir\1\0\2\rinterval\3è\a\17follow_files\2\nsigns\1\0\t\24attach_to_untracked\2\14word_diff\1\vlinehl\1\15signcolumn\2\20update_debounce\3d\18sign_priority\3\6\20max_file_length\3À¸\2\nnumhl\1\23current_line_blame\1\17changedelete\1\0\3\ahl\15DiffChange\ttext\6~\nnumhl\21GitSignsChangeNr\14topdelete\1\0\3\ahl\15DiffDelete\ttext\bâ€¾\nnumhl\21GitSignsDeleteNr\vdelete\1\0\3\ahl\15DiffDelete\ttext\6_\nnumhl\21GitSignsDeleteNr\vchange\1\0\3\ahl\15DiffChange\ttext\bâ”‚\nnumhl\21GitSignsChangeNr\badd\1\0\0\1\0\3\ahl\fDiffAdd\ttext\bâ”‚\nnumhl\18GitSignsAddNr\nsetup\rgitsigns\frequire\0" },
     loaded = true,
     path = "/home/liquell/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
@@ -211,6 +211,12 @@ _G.packer_plugins = {
     path = "/home/liquell/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["toggleterm.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
+    loaded = true,
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
   undotree = {
     loaded = true,
     path = "/home/liquell/.local/share/nvim/site/pack/packer/start/undotree",
@@ -251,12 +257,16 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\n‡\6\0\0\5\0\24\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\14\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\3=\3\15\0025\3\16\0=\3\17\0025\3\18\0=\3\19\0025\3\20\0=\3\21\0025\3\22\0=\3\23\2B\0\2\1K\0\1\0\tyadm\1\0\1\venable\1\19preview_config\1\0\5\nstyle\fminimal\bcol\3\1\rrelative\vcursor\vborder\vsingle\brow\3\0\28current_line_blame_opts\1\0\4\14virt_text\2\ndelay\3è\a\22ignore_whitespace\1\18virt_text_pos\beol\17watch_gitdir\1\0\2\17follow_files\2\rinterval\3è\a\nsigns\1\0\t\24attach_to_untracked\2\20max_file_length\3À¸\2\23current_line_blame\1\nnumhl\1\14word_diff\1\vlinehl\1\15signcolumn\2\20update_debounce\3d\18sign_priority\3\6\17changedelete\1\0\3\ttext\6~\nnumhl\21GitSignsChangeNr\ahl\15DiffChange\14topdelete\1\0\3\ttext\bâ€¾\nnumhl\21GitSignsDeleteNr\ahl\15DiffDelete\vdelete\1\0\3\ttext\6_\nnumhl\21GitSignsDeleteNr\ahl\15DiffDelete\vchange\1\0\3\ttext\bâ”‚\nnumhl\21GitSignsChangeNr\ahl\15DiffChange\badd\1\0\0\1\0\3\ttext\bâ”‚\nnumhl\18GitSignsAddNr\ahl\fDiffAdd\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+try_loadstring("\27LJ\2\n‡\6\0\0\5\0\24\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\14\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\3=\3\15\0025\3\16\0=\3\17\0025\3\18\0=\3\19\0025\3\20\0=\3\21\0025\3\22\0=\3\23\2B\0\2\1K\0\1\0\tyadm\1\0\1\venable\1\19preview_config\1\0\5\rrelative\vcursor\bcol\3\1\brow\3\0\vborder\vsingle\nstyle\fminimal\28current_line_blame_opts\1\0\4\18virt_text_pos\beol\14virt_text\2\ndelay\3è\a\22ignore_whitespace\1\17watch_gitdir\1\0\2\rinterval\3è\a\17follow_files\2\nsigns\1\0\t\24attach_to_untracked\2\14word_diff\1\vlinehl\1\15signcolumn\2\20update_debounce\3d\18sign_priority\3\6\20max_file_length\3À¸\2\nnumhl\1\23current_line_blame\1\17changedelete\1\0\3\ahl\15DiffChange\ttext\6~\nnumhl\21GitSignsChangeNr\14topdelete\1\0\3\ahl\15DiffDelete\ttext\bâ€¾\nnumhl\21GitSignsDeleteNr\vdelete\1\0\3\ahl\15DiffDelete\ttext\6_\nnumhl\21GitSignsDeleteNr\vchange\1\0\3\ahl\15DiffChange\ttext\bâ”‚\nnumhl\21GitSignsChangeNr\badd\1\0\0\1\0\3\ahl\fDiffAdd\ttext\bâ”‚\nnumhl\18GitSignsAddNr\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
 -- Config for: nvim-cmp
 time([[Config for nvim-cmp]], true)
 try_loadstring("\27LJ\2\n›\1\0\0\b\0\t\0\0186\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0004\4\0\0=\4\4\0039\4\5\0009\4\6\0044\6\3\0005\a\a\0>\a\1\0065\a\b\0>\a\2\6B\4\2\2=\4\6\3B\1\2\1K\0\1\0\1\0\1\tname\vbuffer\1\0\1\tname\rnvim_lsp\fsources\vconfig\fmapping\1\0\0\nsetup\bcmp\frequire\0", "config", "nvim-cmp")
 time([[Config for nvim-cmp]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+time([[Config for toggleterm.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

@@ -131,7 +131,9 @@ return require('packer').startup(function(use)
     end
   }
   use 'kdheepak/lazygit.nvim'
-
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup()
+  end}
 
   if packer_bootstrap then
     require('packer').sync()
