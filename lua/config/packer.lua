@@ -37,28 +37,32 @@ return require('packer').startup(function(use)
   -- Auto-completion plugin
   use 'L3MON4D3/LuaSnip'
   use 'onsails/lspkind-nvim'
-  use {
-    'hrsh7th/nvim-cmp',
-    requires = {
-      'hrsh7th/cmp-buffer', -- buffer completions
-      'hrsh7th/cmp-path',   -- path completions
-      'hrsh7th/cmp-cmdline',-- cmdline completions
-      'hrsh7th/cmp-nvim-lsp'-- LSP completions
-    },
-    config = function()
-      local cmp = require('cmp')
-      cmp.setup({
-        -- Setup completion
-        mapping = {
-          -- Define your own key mappings
-        },
-        sources = cmp.config.sources({
-          { name = 'nvim_lsp' },
-          { name = 'buffer' },
-        })
-      })
-    end
-  }
+  use ('neoclide/coc.nvim', { branch = 'release' })
+
+
+  -- use {
+  --   'hrsh7th/nvim-cmp',
+  --   requires = {
+  --     'hrsh7th/cmp-buffer', -- buffer completions
+  --     'hrsh7th/cmp-path',   -- path completions
+  --     'hrsh7th/cmp-cmdline',-- cmdline completions
+  --     'hrsh7th/cmp-nvim-lsp'-- LSP completions
+  --   },
+  --   config = function()
+  --     local cmp = require('cmp')
+  --     cmp.setup({
+  --       -- Setup completion
+  --       mapping = {
+  --         -- Define your own key mappings
+  --       },
+  --       sources = cmp.config.sources({
+  --         { name = 'nvim_lsp' },
+  --         { name = 'buffer' },
+  --       })
+  --     })
+  --   end
+  -- }
+
   -- Buffers 
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 

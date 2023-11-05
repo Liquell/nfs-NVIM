@@ -62,17 +62,19 @@ end
 
 
 -- LSP
-map('n', '<leader>ld', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap=true, silent=true })
-map('n', '<leader>lr', '<cmd>lua vim.lsp.buf.references()<CR>', { noremap=true, silent=true })
-map('n', '<leader>lh', '<cmd>lua vim.lsp.buf.hover()<CR>', { noremap=true, silent=true })
-map('n', '<leader>ls', '<cmd>lua vim.lsp.buf.signature_help()<CR>', { noremap=true, silent=true })
-map('n', '<leader>ln', '<cmd>lua vim.lsp.buf.rename()<CR>', { noremap=true, silent=true })
-map('n', '<leader>la', '<cmd>lua vim.lsp.buf.code_action()<CR>', { noremap=true, silent=true })
-map('n', '<leader>li', '<cmd>lua vim.lsp.buf.implementation()<CR>', { noremap=true, silent=true })
-map('n', '<leader>lf', '<cmd>lua vim.lsp.buf.formatting()<CR>', { noremap=true, silent=true })
-map('n', '<leader>lt', '<cmd>lua vim.lsp.buf.type_definition()<CR>', { noremap=true, silent=true })
-map('n', '<leader>lj', '<cmd>lua vim.diagnostic.goto_next()<CR>', { noremap=true, silent=true })
-map('n', '<leader>lk', '<cmd>lua vim.diagnostic.goto_prev()<CR>', { noremap=true, silent=true })
+-- map('n', '<leader>ld', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap=true, silent=true })
+-- map('n', '<leader>lr', '<cmd>lua vim.lsp.buf.references()<CR>', { noremap=true, silent=true })
+-- map('n', '<leader>lh', '<cmd>lua vim.lsp.buf.hover()<CR>', { noremap=true, silent=true })
+-- map('n', '<leader>ls', '<cmd>lua vim.lsp.buf.signature_help()<CR>', { noremap=true, silent=true })
+-- map('n', '<leader>ln', '<cmd>lua vim.lsp.buf.rename()<CR>', { noremap=true, silent=true })
+-- map('n', '<leader>la', '<cmd>lua vim.lsp.buf.code_action()<CR>', { noremap=true, silent=true })
+-- map('n', '<leader>li', '<cmd>lua vim.lsp.buf.implementation()<CR>', { noremap=true, silent=true })
+-- map('n', '<leader>lf', '<cmd>lua vim.lsp.buf.formatting()<CR>', { noremap=true, silent=true })
+-- map('n', '<leader>lt', '<cmd>lua vim.lsp.buf.type_definition()<CR>', { noremap=true, silent=true })
+-- map('n', '<leader>lj', '<cmd>lua vim.diagnostic.goto_next()<CR>', { noremap=true, silent=true })
+-- map('n', '<leader>lk', '<cmd>lua vim.diagnostic.goto_prev()<CR>', { noremap=true, silent=true })
+--
+-- Mappings in COCconfig file
 
 -- LazyGit 
 map("n", "<leader>lg", ":LazyGit<CR>", opts)

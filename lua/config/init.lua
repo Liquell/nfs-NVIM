@@ -12,7 +12,8 @@ require("nvim-tree").setup()
 -- LSP
 require('config.lspconfig')
 require('config.treesitter')
-require('config.cmpconfig')
+require('config.cocconfig')
+-- require('config.cmpconfig')
 
 -- BufferLines
 require('bufferline').setup{}
