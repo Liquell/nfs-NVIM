@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
   -- Theme
   use { "ellisonleao/gruvbox.nvim" }
   use "savq/melange-nvim"
+  use "folke/tokyonight.nvim"
   -- LSP
   use 'neovim/nvim-lspconfig'  -- Configurations for Nvim LSP
   use 'williamboman/mason.nvim'  -- Portable package manager for Neovim
