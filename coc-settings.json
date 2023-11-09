@@ -3,5 +3,8 @@
     "confirmKey": "<cr>", // Use Enter to confirm a selection
     "selectedLabel": "▶", // A visual indicator for the selected item
   },
+  "emmet.includeLanguages": {
+    "blade": "html"
+  }
 }
 

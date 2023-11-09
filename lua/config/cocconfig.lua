@@ -161,7 +161,3 @@ vim.opt.statusline:prepend("%{coc#status()}%{get(b:,'coc_current_function','')}"
 -- code actions and coc stuff
 ---@diagnostic disable-next-line: redefined-local
 local opts = {silent = true, nowait = true}
--- Show all diagnostics
-map("n", "<space>a", ":<C-u>CocList diagnostics<cr>", opts)
--- Manage extensions
-map("n", "<space>e", ":<C-u>CocList extensions<cr>", opts)

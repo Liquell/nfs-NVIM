@@ -45,7 +45,7 @@ map('v', '<leader>/', ':CommentToggle<CR>', opts)
 -- Copilot 
 vimG.copilot_no_tab_map = true
 vimG.copilot_assume_mapped = true
-map("i", "<C-Y>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+map("i", "<C-Tab>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
 
 -- UndoTree
 map('n', '<leader>u', ':UndotreeToggle<CR>', opts)
