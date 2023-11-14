@@ -1,4 +1,5 @@
 local vim = vim
+local transperent = false;
 
 vim.o.number = true
 vim.wo.relativenumber = true
@@ -29,13 +30,9 @@ local highlight = {
   "CursorColumn",
   "Whitespace",
 }
--- require("ibl").setup {
-  --     indent = { highlight = highlight, char = "" },
-  --     whitespace = {
-    --         highlight = highlight,
-    --         remove_blankline_trail = false,
-    --     },
-    --     scope = { enabled = false },
-    -- }
+
+if (transperent) then
+  vim.cmd[[hi Normal guibg=NONE ctermbg=NONE]]
+end
 
 require("ibl").setup()
