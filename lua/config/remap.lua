@@ -7,6 +7,7 @@ local vimG = vim.g
 
 vimKey("n", "<leader>e", vimCmd.NvimTreeToggle)
 vimKey("n", "<leader>o", vimCmd.NvimTreeFocus)
+vimKey("n", "<leader>tf", vimCmd.NvimTreeFindFile)
 vimKey("n", "<leader>s", vimCmd.w)
 vimKey("n", "<C-s>", vimCmd.w)
 vimKey("i", "jj", "<Esc>")
@@ -22,7 +23,6 @@ local builtin = require('telescope.builtin')
 vimKey('n', '<leader>ff', builtin.find_files, {})
 vimKey('n', '<leader>fw', builtin.live_grep, {})
 vimKey('n', '<leader>fb', builtin.buffers, {})
-
 
 -- buffers
 

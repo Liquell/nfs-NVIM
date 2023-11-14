@@ -22,7 +22,10 @@ vim.opt.foldlevelstart = 99
 
 vim.o.background = "dark" -- or "light" for light mode
 vim.opt.termguicolors = true
-vim.cmd.colorscheme 'tokyonight-storm'
+
+-- Themes
+-- vim.cmd.colorscheme 'tokyonight-storm'
+vim.cmd.colorscheme 'melange'
 -- vim.cmd([[colorscheme gruvbox]])
 
 -- Lines

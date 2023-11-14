@@ -6,6 +6,9 @@
   "emmet.includeLanguages": {
     "blade": "html"
   },
-  "snippets.ultisnips.pythonPrompt": false
+  "snippets.ultisnips.pythonPrompt": false,
+  "cSpell.userWords": [
+    "Irpin"
+  ]
 }
 

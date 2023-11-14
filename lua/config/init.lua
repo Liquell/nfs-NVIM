@@ -29,3 +29,4 @@ require("which-key").setup{}
 require('config.wk')
 require('config.lualine')
 require('config.miniMove')
+require'colorizer'.setup()

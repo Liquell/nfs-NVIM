@@ -34,6 +34,7 @@ return require('packer').startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+  use 'norcalli/nvim-colorizer.lua'
 
   -- Auto-completion plugin
   use 'L3MON4D3/LuaSnip'
