@@ -36,10 +36,11 @@ map("i", "<c-j>", "<Plug>(coc-snippets-expand-jump)")
 map("i", "<c-space>", "coc#refresh()", {silent = true, expr = true})
 
 -- GoTo code navigation
-map("n", "<leader>gd", "<Plug>(coc-definition)", {silent = true})
-map("n", "<leader>gy", "<Plug>(coc-type-definition)", {silent = true})
-map("n", "<leader>gi", "<Plug>(coc-implementation)", {silent = true})
-map("n", "<leader>gr", "<Plug>(coc-references)", {silent = true})
+map("n", "<leader>ld", "<Plug>(coc-definition)", {silent = true})
+map("n", "<leader>ly", "<Plug>(coc-type-definition)", {silent = true})
+map("n", "<leader>li", "<Plug>(coc-implementation)", {silent = true})
+map("n", "<leader>lr", "<Plug>(coc-references)", {silent = true})
+map("n", "<leader>lrn", "<Plug>(coc-rename)", {silent = true})
 
 
 -- Use K to show documentation in preview window

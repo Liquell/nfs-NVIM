@@ -24,8 +24,8 @@ vim.o.background = "dark" -- or "light" for light mode
 vim.opt.termguicolors = true
 
 -- Themes
--- vim.cmd.colorscheme 'tokyonight-storm'
-vim.cmd.colorscheme 'melange'
+vim.cmd.colorscheme 'tokyonight-storm'
+-- vim.cmd.colorscheme 'melange'
 -- vim.cmd([[colorscheme gruvbox]])
 
 -- Lines

@@ -232,6 +232,11 @@ _G.packer_plugins = {
     path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-closer",
     url = "https://github.com/rstacruz/vim-closer"
   },
+  ["vim-doge"] = {
+    loaded = true,
+    path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-doge",
+    url = "https://github.com/kkoomen/vim-doge"
+  },
   ["vim-illuminate"] = {
     loaded = true,
     path = "/home/liquell/.local/share/nvim/site/pack/packer/start/vim-illuminate",
