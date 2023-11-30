@@ -2,9 +2,7 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-
   use 'rstacruz/vim-closer'
-
 
   -- Telescope
   use {
@@ -39,8 +37,11 @@ return require('packer').startup(function(use)
   -- Auto-completion plugin
   use 'L3MON4D3/LuaSnip'
   use 'onsails/lspkind-nvim'
-  use ('neoclide/coc.nvim', { branch = 'release' })
-
+  use {'neoclide/coc.nvim', branch = 'master', run = 'npm ci'}
+  use {
+    'kkoomen/vim-doge',
+    run = ':call doge#install()'
+  }
 
   -- use {
   --   'hrsh7th/nvim-cmp',
