@@ -7,7 +7,8 @@ return require('packer').startup(function(use)
   -- Telescope
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.4',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { {'nvim-lua/plenary.nvim'} },
+    file_ignore_patterns = { "node%_modules/.*", "vendor/*", "public/vendor/*" },
   }
 
   -- Nvim Tree
