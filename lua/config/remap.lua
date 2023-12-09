@@ -42,6 +42,15 @@ map("n", "<leader>p", "<Cmd>BufferLineCyclePrev<CR>", opts)
 map('n', '<leader>/', ':CommentToggle<CR>', opts)
 map('v', '<leader>/', ':CommentToggle<CR>', opts)
 
+-- GitSigns
+map('n', '<leader>gb', ':Gitsigns blame_line<CR>', opts)
+map('n', '<leader>grh', ':Gitsigns reset_hunk<CR>', opts)
+map('n', '<leader>grb', ':Gitsigns reset_buffer<CR>', opts)
+map('n', '<leader>grr', ':Gitsigns reset_ref<CR>', opts)
+map('n', '<leader>gpc', ':Gitsigns preview_hunk<CR>', opts)
+map('n', '<leader>gsh', ':Gitsigns stage_hunk<CR>', opts)
+map('n', '<leader>gsp', ':Gitsigns select_hunk<CR>', opts)
+
 -- Copilot 
 vimG.copilot_no_tab_map = true
 vimG.copilot_assume_mapped = true
